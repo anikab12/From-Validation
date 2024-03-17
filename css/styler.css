@@ -74,3 +74,13 @@ form button{
     margin-top: 20px;
     width: 100%;
 }
+#My_Show{
+        position: absolute;
+        margin-left: 90%;
+        bottom: 30px;
+}
+#My_Show1{
+        position: absolute;
+        margin-left: 90%;
+        bottom: 30px;
+}

@@ -27,6 +27,34 @@ function checkPasswordMatch(input1,input2) {
         showError(input2,"password Dont Match (please Same Password Required)")
     }
 }
+//iconBarCheck
+const passwordss = document.querySelector("#password");
+
+const iconbar=document.querySelector("#My_Show");
+
+
+iconbar.addEventListener("click",function(){
+    if(passwordss.type === "password"){
+        passwordss.type ="text";
+        iconbar.style.color ="red";
+    }else{
+        passwordss.type ="password";
+        iconbar.style.color ="black";
+    }
+});
+
+const ConPassword1 =document.getElementById("Con-Password")
+const iconbar2=document.getElementById("My_Show1");
+
+iconbar2.addEventListener("click",function(){
+      if(ConPassword1.type === "password"){
+        ConPassword1.type = "text";
+        iconbar2.style.color = "red";
+    }else{
+        ConPassword1.type ="password";
+        iconbar2.style.color ="black";
+    }
+})
 //check required
 function checkrequired(inputarr) {
     inputarr.forEach(input => {
